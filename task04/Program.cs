@@ -18,6 +18,6 @@ if (number2 > max)
 if (number3 > max)
     max = number3;
 
-Console.WriteLine($"Max = {max}");
+Console.WriteLine(max);
 
-// Console.WriteLine(max);
+// Console.WriteLine($"Max = {max}");
