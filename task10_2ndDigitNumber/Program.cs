@@ -24,13 +24,3 @@ else
 }
 
 
-
-// int number = Convert.to.Next(100, 1000);
-
-// int SecondDigit(int num)
-// {
-//     int firstDigit = num / 100;
-//     return (num - firstDigit * 100) / 10;
-// }
-// int result = SecondDigit(number);
-// Console.WriteLine($"Итоговое число от {number} => {result}");
