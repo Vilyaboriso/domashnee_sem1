@@ -15,11 +15,11 @@
 // else 
 // Console.Write($"{number1} не кратно {number2} остаток от деление равен {resalt}");
 
-
-int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите первое число");
-int num2 = Convert.ToInt32(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
 
 bool IsAliquot(int arg1, int arg2)
 {
