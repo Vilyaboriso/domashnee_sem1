@@ -15,7 +15,7 @@ if (number > 99 && number < 1000)
     return (num - firstDigit * 100) / 10;
 }
 int result = SecondDigit(number);
-Console.WriteLine($"Итоговое число от {number} => {result}");
+Console.WriteLine($"Вторая цифра от {number} => {result}");
 }
 
 else 
