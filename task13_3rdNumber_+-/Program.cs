@@ -15,16 +15,16 @@ if (number > 99)
     {
         while (x > 1000)
         {
-        x = x / 10;
+            x = x / 10;
         }
         int thirdDigit(int argx)
-    {
-        return x % 10;
+        {
+            return x % 10;
+        }
+        int result = thirdDigit(number);
+        Console.WriteLine($"Третья цифра от {number} => {result}");
     }
-    int result = thirdDigit(number);
-    Console.WriteLine($"Третья цифра от {number} => {result}");
-    }
-    
+
 }
 
 else Console.Write($"В числе {number} Третьей цифры нет");

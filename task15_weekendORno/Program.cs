@@ -33,7 +33,13 @@ bool Weekend (int num)
     return num == 6 || num == 7;
 }
 if (Weekend(num)) Console.WriteLine(" - выходной");
-else Console.WriteLine(" - рабочий день");
+
+bool Work (int num)
+{
+    return num == 1 || num == 2 || num == 3 || num == 4 || num == 5;
+}
+
+if (Work(num)) Console.WriteLine(" - рабочий день");
 
 
 
