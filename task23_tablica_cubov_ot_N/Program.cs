@@ -12,7 +12,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int n = number;
 
-void SquareTable(int n)
+void CubeTable(int n)
 {
     int counter = 1;
     while (counter <= n)
@@ -22,5 +22,5 @@ void SquareTable(int n)
     }
 }
 
-if (n > 0) SquareTable(n);
+if (n > 0) CubeTable(n);
 else System.Console.WriteLine("Неверное значение");
