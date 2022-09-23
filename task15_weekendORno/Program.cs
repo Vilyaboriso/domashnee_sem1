@@ -32,7 +32,7 @@ bool Weekend (int num)
 {
     return num == 6 || num == 7;
 }
-if (Weekend(num)) Console.WriteLine(" - выходной");
+if (Weekend(num)) Console.Write(" - выходной");
 
 bool Work (int num)
 {
