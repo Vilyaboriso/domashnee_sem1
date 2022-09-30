@@ -17,7 +17,7 @@ void CubeTable(int n)
     int counter = 1;
     while (counter <= n)
     {
-        Console.WriteLine($"{counter,3} ||   {counter * counter * counter,5}||");
+        Console.WriteLine($"{counter,3} || {counter * counter * counter,5}||");
         counter++;
     }
 }
