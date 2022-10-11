@@ -5,35 +5,47 @@
 // Если N = 7 -> 0 1 1 2 3 5 8
 
 
-Console.WriteLine("введите число");
-int number = Convert.ToInt32(Console.ReadLine());
-PrintFibonacci(number);
+// Console.WriteLine("введите число");                             // Без массива решение
+// int number = Convert.ToInt32(Console.ReadLine());
+// PrintFibonacci(number);
 
-void PrintFibonacci(int num)
+// void PrintFibonacci(int num)
+// {
+//     int firstNum = 0;
+//     int secondNum = 1;
+//     Console.Write($"{firstNum} {secondNum} ");
+//     for (int i = 2; i < num; i++)
+//     {
+//         int nextNum = firstNum + secondNum;
+//         Console.Write($"{nextNum} ");
+//         firstNum = secondNum;
+//         secondNum = nextNum;
+//     }
+// }
+
+
+int[] array = new int[5];        // для пяти
+CreateFibonacciRow(array);
+PrintArray(array);
+
+void CreateFibonacciRow (int[] arr)
 {
-    int firstNum = 0;
-    int secondNum = 1;
-    Console.Write($"{firstNum} {secondNum} ");
-    for (int i = 2; i < num; i++)
+    arr[0] = 0;
+    arr[1] = 1;
+    for (int i = 2; i < arr.Length; i++)
     {
-        int nextNum = firstNum + secondNum;
-        Console.Write($"{nextNum} ");
-        firstNum = secondNum;
-        secondNum = nextNum;
+        arr[i] = arr[i - 1] + arr[i - 2];
     }
 }
 
+void PrintArray(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+        else Console.Write($"{array[i]}");
+    }
+    Console.WriteLine("]");
+}
 
-// int[] array = new int[5];
-// CreateFibonacciRow(array);
-// PrintArray(array);
-
-// void CreateFibonacciRow (int[] arr)
-// {
-//     arr[0] = 0;
-//     arr[1] = 1;
-//     for (int i = 2; i < arr.Length; i++)
-//     {
-//         arr[i] = arr[i - 1] + arr[i - 2];
-//     }
-// }

@@ -32,6 +32,8 @@ void PrintArray(int[] array)
 }
 
 void ReverseArray(int[] array)
+
+
 {
 int size = array.Length;
 int index1 = 0;
@@ -56,3 +58,4 @@ PrintArray(arr);
 
 Array.Reverse(arr);
 PrintArray(arr);
+

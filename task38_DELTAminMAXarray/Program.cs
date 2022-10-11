@@ -54,4 +54,4 @@ PrintArray(arr);
 
 double[] minMax = MinMax(arr);
 
-Console.WriteLine($"Разница = {minMax[0] - minMax[1]}");
+Console.WriteLine($"Разница = {Math.Round(minMax[0] - minMax[1], 2)}");
